@@ -1,0 +1,25 @@
+﻿@model Homework09BirthdayCardAMalander.Models.EnterCard
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
+    <title>SuccessForm</title>
+
+</head>
+<body>
+    <h1 class="jumbotron">Birthday card generator</h1>
+    <h1>Birthday card sent.</h1>
+    <h2>From: @Model.From</h2>
+    <h2>To: @Model.To</h2>
+    <h2>Message: @Model.Message</h2>
+
+</body>
+</html>

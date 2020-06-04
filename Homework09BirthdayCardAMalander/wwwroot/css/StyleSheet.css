@@ -1,0 +1,61 @@
+﻿
+
+.btn-green {
+
+
+}
+
+.jumbotron {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: white;
+    background-color: #151515;
+    width:auto;
+}
+
+
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.form-control2 {
+    display: block;
+    width: 300px;
+    height: 15px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: lightyellow;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
