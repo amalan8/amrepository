@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1 style="font-weight:bold">The Learning Center</h1>
+    <p class="lead">The place for technology classes.</p>
+</div>
+
+
+<div class="row">
+    <div class="col-md-3">
+        <h2><a asp-action="ClassList">Class List</a></h2>
+
+    </div>
+    <div class="col-md-3">
+        <h2><a asp-action="EnrolledClasses">Your Enrolled Classes</a></h2>
+ 
+    </div>
+    <div class="col-md-3">
+        <h2><a asp-action="AddAClass">Add a Class</a></h2>
+
+    </div>
+</div>
