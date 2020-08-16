@@ -1,0 +1,35 @@
+﻿@model IEnumerable<ClassesApp.Website.Models.UserClassesWebsiteModel>
+
+@{
+    ViewData["Title"] = "EnrolledClasses";
+}
+
+<h2>Enrolled Classes</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model=> model.ClassID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassName)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassName)
+            </td>
+
+        </tr>
+}
+    </tbody>
+</table>

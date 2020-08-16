@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-ClassesApp.Website-478FEC79-DBDA-4828-9153-83D175CCE927</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <Compile Remove="obj\Debug\netcoreapp2.1\**" />
+    <Content Remove="bin\**" />
+    <Content Remove="obj\Debug\netcoreapp2.1\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <EmbeddedResource Remove="obj\Debug\netcoreapp2.1\**" />
+    <None Remove="bin\**" />
+    <None Remove="obj\Debug\netcoreapp2.1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp3.1\ClassesApp.Website.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\ClassesApp.Website.MvcApplicationPartsAssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\ClassApp.Website.csproj.nuget.dgspec.json" />
+    <Content Include="obj\ClassesApp.Website.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\netcoreapp3.1\ClassesApp.Website.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ClassApp.Website.csproj.user" />
+    <None Include="obj\ClassApp.Website.csproj.nuget.cache" />
+    <None Include="obj\ClassApp.Website.csproj.nuget.g.props" />
+    <None Include="obj\ClassApp.Website.csproj.nuget.g.targets" />
+    <None Include="obj\ClassesApp.Website.csproj.nuget.cache" />
+    <None Include="obj\ClassesApp.Website.csproj.nuget.g.props" />
+    <None Include="obj\ClassesApp.Website.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\netcoreapp3.1\ClassesApp.Website.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\ClassesApp.Website.assets.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\ClassesApp.Website.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\ClassesApp.Website.dll" />
+    <None Include="obj\Debug\netcoreapp3.1\ClassesApp.Website.exe" />
+    <None Include="obj\Debug\netcoreapp3.1\ClassesApp.Website.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\ClassesApp.Website.pdb" />
+    <None Include="obj\Debug\netcoreapp3.1\ClassesApp.Website.TagHelpers.input.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassApp.Business\ClassApp.Business.csproj" />
+  </ItemGroup>
+
+</Project>
