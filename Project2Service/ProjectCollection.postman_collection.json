@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "aeab87bf-0ab7-421c-bd6d-90ee5687367d",
+		"name": "ProjectCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:54730/api/contacts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "54730",
+					"path": [
+						"api",
+						"contacts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Name\": \"John\",\r\n  \"Phones\" :\r\n  [\r\n    {\r\n      \"Number\": \"555-5555\",\r\n      \"PhoneType\" : \"Home\"\r\n    }\r\n      ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:54730/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "54730",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 101,\r\n    \"Name\": \"Johnn\",\r\n    \"Phones\": [\r\n        {\r\n            \"Number\": \"455-5555\",\r\n            \"PhoneType\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:54730/api/users/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "54730",
+					"path": [
+						"api",
+						"users",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:54730/api/users/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "54730",
+					"path": [
+						"api",
+						"users",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Users",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:54730/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "54730",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e2777f91-723e-4d9b-a869-711047efbaea",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8aeafa3b-dd17-4da8-8836-8d5d99fc76c5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "c1d19451-6c9f-4182-addb-d4c0f063d997",
+			"key": "UserService",
+			"value": "",
+			"disabled": true
+		}
+	],
+	"protocolProfileBehavior": {}
+}
